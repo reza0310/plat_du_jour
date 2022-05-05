@@ -1,6 +1,11 @@
 from random import randint
+
+
+DATA_FILENAME = "data.txt"
+
+
 print("Chargement...")
-with open("donnees.txt", "r", encoding="utf-8") as f:
+with open(DATA_FILENAME, "r", encoding="utf-8") as f:
     donnees = f.readlines()
 service = []
 prixs = {"bon marché":1, "Coût moyen":2, "assez cher":3}
